@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  swagger_ui:
+    environment:
+      - SWAGGER_JSON=/usr/share/swagger.json
+    image:   "swaggerapi/swagger-ui"
+    volumes:
+      - ../swagger/swagger.json:/usr/share/swagger.json
+    restart: always
+    ports:   ["58002:8080"]

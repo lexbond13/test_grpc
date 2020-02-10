@@ -1,0 +1,34 @@
+swagger: '2.0'
+info:
+  title: Dancerate
+  description: API for Dancerate project
+  version: '0.0.1'
+security:
+  - Bearer: []
+consumes: [application/json]
+produces: [application/json]
+
+securityDefinitions:
+  Bearer:
+    type: apiKey
+    name: Authorization
+    in: header
+
+paths:
+
+  /home:
+    get:
+      operationId: getHome
+      tags:
+        - Home
+
+      responses:
+        200:
+          description: get home page
+          schema:
+            $ref: '#/definitions/Home'
+
+definitions:
+
+  Home:
+    type: string

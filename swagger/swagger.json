@@ -1,0 +1,42 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "description" : "API for Dancerate project",
+    "version" : "0.0.1",
+    "title" : "Dancerate"
+  },
+  "consumes" : [ "application/json" ],
+  "produces" : [ "application/json" ],
+  "security" : [ {
+    "Bearer" : [ ]
+  } ],
+  "paths" : {
+    "/home" : {
+      "get" : {
+        "tags" : [ "Home" ],
+        "operationId" : "getHome",
+        "parameters" : [ ],
+        "responses" : {
+          "200" : {
+            "description" : "get home page",
+            "schema" : {
+              "$ref" : "#/definitions/Home"
+            }
+          }
+        }
+      }
+    }
+  },
+  "securityDefinitions" : {
+    "Bearer" : {
+      "type" : "apiKey",
+      "name" : "Authorization",
+      "in" : "header"
+    }
+  },
+  "definitions" : {
+    "Home" : {
+      "type" : "string"
+    }
+  }
+}

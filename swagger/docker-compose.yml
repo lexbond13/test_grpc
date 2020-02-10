@@ -1,0 +1,7 @@
+version: "2"
+services:
+  gen-swagger-json:
+    volumes:
+      - .:/swagger
+    image: swaggerapi/swagger-codegen-cli
+    command: generate -i /swagger/swagger.yml -l swagger -o /swagger
