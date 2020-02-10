@@ -3,7 +3,7 @@ package main
 import (
 	"github.com/lexbond13/test_repo/api/server"
 	lr "github.com/lexbond13/test_repo/logger"
-	"github.com/lexbond13/test_repo/webwire"
+
 )
 
 func main() {

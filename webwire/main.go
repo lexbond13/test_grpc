@@ -1,6 +1,6 @@
 package webwire
 
-import logger2 "dancerate/logger"
+import logger2 "test_repo/logger"
 
 var logger *logger2.Logger
 var serverAddr string

@@ -1,8 +1,8 @@
 package server
 
 import (
-	"dancerate/api/handler"
 	"github.com/fasthttp/router"
+	"test_repo/api/handler"
 )
 
 // GetRoutes
